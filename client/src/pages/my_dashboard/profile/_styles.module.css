@@ -1,0 +1,102 @@
+.modal_container {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    height: 110vh;
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 900px) {
+      .modal_container {
+          flex-direction: column;
+          height: 100%;
+      }
+    }
+  
+  .button {
+    margin-right: 0;
+  }
+  
+  .save_button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .container {
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    background-color: theme("colors.primary.light");
+  }
+  
+  .title {
+    line-height: 1;
+    font-size: theme("fontSize.lg");
+    color: theme("colors.secondary.main");
+    font-weight: theme("fontWeight.medium");
+    margin-bottom: 15px;
+  }
+  
+  .social_accounts {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .social_icon {
+    font-size: theme("fontSize.xl");
+    color: theme("colors.primary.main");
+  }
+  
+  .basic_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+  }
+  
+  .profile_image {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    border: 3px solid theme("colors.primary.main");
+    position: absolute;
+  }
+  
+  .editImageIcon {
+    height: 30px;
+    width: 30px;
+    font-weight: 600;
+    color: theme("colors.primary.main");
+    background-color: theme("colors.primary.light");
+    padding: 5px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    top: 120px;
+    left: 35px;
+  }
+  
+  .name {
+    color: theme("colors.primary.main");
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 140px;
+  }
+  
+  .role {
+    color: theme("colors.secondary.main");
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .addRole {
+    color: theme("colors.secondary.main");
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    text-align: center;
+  }
+  
